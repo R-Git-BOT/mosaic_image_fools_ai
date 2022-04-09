@@ -1,1 +1,1 @@
-streamlit==version 1.8.1
+streamlit==1.8.1
