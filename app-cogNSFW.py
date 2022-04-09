@@ -47,6 +47,9 @@ st.text(" \n")
 
 placeholder = st
 
+if not(os.path.exists('/img')):
+    os.mkdir('img')
+
 if uploaded_file is not None:
     # uploaded_fileが空っぽじゃなかったら通る
     img = Image.open(uploaded_file)
