@@ -1,6 +1,6 @@
-from asyncio.windows_events import NULL
-from distutils.command.upload import upload
-from turtle import up
+# from asyncio.windows_events import NULL
+# from distutils.command.upload import upload
+# from turtle import up
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
