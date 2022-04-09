@@ -23,8 +23,8 @@ with open('secret.json') as f:
     secret = json.load(f)
 
 def detect_arg_score(imagepath):
-    KEY = secret['KEY']
-    ENDPOINT = secret['ENDPOINT']
+    KEY = st.secrets.AzureApiKey.key
+    ENDPOINT = st.secrets.AzureApiKey.endpoint
     
     local_image = open(imagepath, "rb")
     # remote_image_features = ["adult"]
