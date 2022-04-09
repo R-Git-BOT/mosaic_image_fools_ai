@@ -1,3 +1,6 @@
+from asyncio.windows_events import NULL
+from distutils.command.upload import upload
+from turtle import up
 from azure.cognitiveservices.vision.computervision import ComputerVisionClient
 from azure.cognitiveservices.vision.computervision.models import OperationStatusCodes
 from azure.cognitiveservices.vision.computervision.models import VisualFeatureTypes
@@ -16,8 +19,8 @@ import glob
 import shutil
 import pandas as pd
 
-with open('secret.json') as f:
-    secret = json.load(f)
+# with open('secret.json') as f:
+#     secret = json.load(f)
 
 def detect_arg_score(imagepath):
     KEY = st.secrets.AzureApiKey.key
